@@ -1,0 +1,18 @@
+public class Boat extends Vehicle{    
+  private int litresPerHour;    
+  private int numberOfBerths;
+  
+  public Boat(String name, String countryOfOrigin, int lpH, int brths){ 
+    this.name = name;
+    this.countryOfOrgin = countryOfOrgin; 
+    this.lpH = lpH;
+    this.brths = brths; 
+  } 
+  public int fuelConsumption(int tripLength){
+    return lpH * tripLength; 
+  }
+    
+    
+    public String toString(){        
+    return "Boat with " + numberOfBerths + " berths  made in  " + countryOfOrigin;    }
+}  

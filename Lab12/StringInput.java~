@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class StringInput {
+  
+  public static void main(String []args) {
+    
+    int vowelCount = 0; //variable to count the vowels
+    int consonantCount = 0; //variable to count the consonants
+    int otherCount = 0; // variable to count any other character
+    
+    System.out.println("Enter a sentence");
+    Scanner scan = new Scanner(System.in);
+    String str = scan.nextLine();
+    System.out.println("Sentence is : "+str);
+    
+    for (int count = 0; count < str.length(); count++) {
+      
+      char character = str.charAt(count);
+      switch (character) {
+        
+        case 'A':
+        case 'E':
+        case 'I':
+        case 'O':
+        case 'U':
+        case 'a':
+        case 'e':
+        case 'i':
+        case 'o':
+        case 'u':
+          vowelCount++;
+          break;
+        case ' ':
+        case '!':
+        case '?':
+          otherCount++;
+          break;  
+          
+      }// switch end
+      
+    }// for end
+    System.out.println("Vowel Count: "+vowelCount);
+    System.out.println("Consonaant Count : "+(consonantCount = str.length()-vowelCount-otherCount));
+  }// main method end
+  
+}// class end

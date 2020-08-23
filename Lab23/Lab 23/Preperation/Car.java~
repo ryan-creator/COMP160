@@ -1,0 +1,17 @@
+public class Car extends Vehicle{    
+  private int numAirBags;    
+  private int litresPerKilometre;
+  
+  public Car(String name, String countryOfOrigin, int lpK, int airBags){ 
+    this.name = name;
+    this.countryOfOrgin = countryOfOrgin; 
+    this.lpK = lpK;
+    this.airBags = airBags;
+  } 
+  public int fuelConsumption(int tripLength){
+    return lpk * tripLength;
+  }    
+  public String toString(){        
+    return "Car with " + numAirBags + " air bags made in  " + countryOfOrigin;    
+  } 
+} 

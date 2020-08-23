@@ -1,0 +1,17 @@
+/*Imports*/
+import javax.swing.*;
+
+public class TablePanelApp{
+  
+  public static void main(String [] args){
+    /*Sets up new frame*/
+    JFrame frame = new JFrame("TablePanelApp");
+    /*Sets default close operation to exit*/
+    frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+    /*Makes a new instance of table panel*/
+    TablePanel table1 = new TablePanel();
+    frame.getContentPane().add(new TablePanel());
+    frame.pack();
+    frame.setVisible(true);
+  }
+}

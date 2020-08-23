@@ -1,0 +1,74 @@
+import java.util.Scanner;
+
+public class Customer {
+  private String name;
+  private boolean child;
+  private boolean student;
+  private int age;
+  private String booked;
+  
+  public Customer(String name, int age, boolean student){
+    this.name = name;
+    this.age = age;
+    this.student = student;
+  }
+  
+  /* accessor for name */
+  public String getName(){
+    return name;
+  }
+  
+  /* Booking mutator 
+  public void setBooked(){
+    if (booked == "y" || booked == "Y")
+      booked = true;
+    else 
+      booked = false;
+  }
+  
+  /* Accessor for the booking */
+  public String getBooked(){
+    if (booked == "Y")
+      return "Booked";
+    else 
+      return "Not Booked";
+  }// accessor end
+  
+  /*Accessor that returns true if the person is a child */
+  public boolean isChild(){
+    if (age >= 5 && age <=16){
+      return true;
+    }else {
+      return false;
+    }
+  }// accessor end
+  
+  /* Accessor that returns true if the person is a student */
+  public boolean isStudent(){
+    return student;
+  }// accessor end
+  
+  /* Conform booking and price method */
+  public void confirmBooking(){
+    double ticketPrice = 56.0;
+    double mealPrice = 30.0;
+    
+    if (student == true || child == true)
+      ticketPrice = 28.0;
+    else
+      ticketPrice = 44.8;
+    
+    if (child == true)
+      mealPrice = 15.0;
+    else
+      mealPrice = 27.0;
+    
+    double totalPrice = ticketPrice + mealPrice;
+    
+    System.out.println(getName()+"\nTicket price:$"+ticketPrice+"\nMeal Price:$"+mealPrice+"\nTotal price:$"+totalPrice+"\nConfirm booking for "+getName()+" (Y/N)");
+    Scanner scan = new Scanner(System.in);
+    String booked = scan.nextLine();
+    System.out.println(getBooked()+"\n\n");
+  }
+  
+}// class end

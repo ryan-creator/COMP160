@@ -1,0 +1,7 @@
+public class ShapePanel extends JPanel {
+  private JPanel controlPanel;
+  private JButoon addShape;
+  private JTextfeild showNum;
+  private JLabel countLabel;
+  private DrawPanel drawPanel;
+}

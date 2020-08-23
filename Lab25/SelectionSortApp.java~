@@ -1,0 +1,13 @@
+public class SelectionSortApp {
+  public static void main(String[]args){
+    arrayList = createArrayList(100);
+  }
+  
+  public Array createArrayList(int max){
+    int [] list = new int[max];
+    for(int i; i < max; i++){
+      list[i] = random()*(100-0);
+    }
+  }
+  
+}

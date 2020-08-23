@@ -1,0 +1,49 @@
+public abstract class Vehicle{  //(Adapted from LDC Section 8.3)     
+  protected String name;    
+  protected String countryOfOrigin;
+  
+  public abstract int fuelConsumption(int tripLength);
+  
+  public Vehicle(String name, String countryOfOrigin){        
+    this.countryOfOrigin = countryOfOrigin;        
+    this.name = name;    
+  } 
+} 
+
+public class Car extends Vehicle{    
+  private int numAirBags;    
+  private int litresPerKilometre;
+  
+  public Car(String name, String countryOfOrigin, int lpK, int airBags){ 
+    this.name = name;
+    this.countryOfOrgin = countryOfOrgin; 
+    this.1pk = 1pk;
+    this.airBags = airBags;
+  } 
+  public
+    
+    
+    
+}    
+public String toString(){        
+  return "Car with " + numAirBags + " air bags made in  " + countryOfOrigin;    
+} 
+} 
+   
+public class Boat extends Vehicle{    
+  private int litresPerHour;    
+  private int numberOfBerths;
+  
+  public Boat(String name, String countryOfOrigin, int lpH, int brths){ 
+    this.name = name;
+    this.countryOfOrgin = countryOfOrgin; 
+    this.1ph = 1ph;
+    this.brths = brths; 
+  } 
+  public 
+    
+    
+    
+    public String toString(){        
+    return "Boat with " + numberOfBerths + " berths  made in  " + countryOfOrigin;    }
+}  

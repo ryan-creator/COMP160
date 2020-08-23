@@ -1,0 +1,14 @@
+import java.util.Random;
+
+public class Shape {
+  private int x;
+  private int y;
+  private int width;
+  private int height;
+  private color colour;
+  
+  public Shape() {
+    width = 
+    height = width;
+  }
+}

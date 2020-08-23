@@ -1,0 +1,28 @@
+import java.util.Scanner;
+import java.util.Random;
+
+public class IntCounterApp{
+  
+  public static void main(String [] args){
+    Scanner sc = new Scanner(System.in);
+    
+    for(int i = 0; i < 3; i++){
+      
+      System.out.println("Which number do you wish to find?");
+      int userIn = sc.nextInt();
+      IntCounter inst = new IntCounter(makeArray());
+      inst.showTarget(userIn);
+    }
+    System.out.println("Finished");
+  }
+  /**Makes an random array*/
+  public static int [] makeArray(){
+    
+    Random g = new Random();
+    int [] x = new int [g.nextInt(6)+5];
+    for(int i = 0; i < x.length; i++){
+      x[i] = g.nextInt(4);
+    }
+    return x;
+  }
+}
